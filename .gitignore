@@ -1,2 +1,10 @@
-/venv/
 db.sqlite3
+# env folder
+/venv/
+__pycache__/
+*.pyc
+*/*.pyc
+*/*/*.pyc
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
