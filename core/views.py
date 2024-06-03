@@ -10,10 +10,6 @@ def index(request):
         'categories': categories,
         'items': items,
     })
-    
-    
-
-    
 
 
 
