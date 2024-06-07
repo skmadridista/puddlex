@@ -10,7 +10,7 @@ def item_detail(request,pk):
                                                     'related_items' : related_items})
 
 login_required    
-def new(request):
+def new_item(request):
     
     if request.method == 'POST':
         form = NewItemForm(request.POST, request.FILES)
@@ -27,3 +27,10 @@ def new(request):
         'form' : form,
         'title': 'New item'
     })
+    
+login_required
+def delete_item(request,pk):
+    item = get_object_or_404(Item,pk=pk,created_by = request.user)
+    item.delete()
+    
+    return redirect('dashboard:index')
