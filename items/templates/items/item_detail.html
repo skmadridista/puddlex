@@ -20,7 +20,8 @@
             <div class='mt-6 p-6 bg-white rounded-xl'>
               <p>This is your item!</p>
               </div>
-            <a href="{% url 'items:delete_item' item.id %}" class='inline-block mt-6 px-6 py-3 text-lg font-semibold bg-red-500 text-white rounded-xl'>Delete Item</a>
+            <a href="{% url 'items:edit_item' item.id %}" class='inline-block mt-6 px-6 py-3 text-lg font-semibold bg-cyan-500 hover:bg-cyan-700 text-white rounded-xl'>Edit Item</a>
+            <a href="{% url 'items:delete_item' item.id %}" class='inline-block mt-6 px-6 py-3 text-lg font-semibold bg-red-500 hover:bg-red-700 text-white rounded-xl'>Delete Item</a>
         
         
         
